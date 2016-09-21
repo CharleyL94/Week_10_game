@@ -25,6 +25,10 @@ Superhero.prototype = {
 
         else {this.health += food.replenish};
         }
+
+        if (this.health >= 150) {
+          this.health = 150;
+        }
   
 
 }

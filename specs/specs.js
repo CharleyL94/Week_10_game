@@ -44,6 +44,13 @@ describe ('Superhero', function() {
         kat.eat(peppers);
         assert.equal(107, kat.health)
     })
+
+    it('should eat baked good', function(){
+      var doughnut = new Food("doughnut", 10);
+      kat.eat(doughnut)
+      assert.equal(110, kat.health)
+    })
+
   })
 
 describe ('Food', function(){
